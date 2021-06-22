@@ -29,7 +29,7 @@
 
     <style>
         .row-space {
-  grid-template-columns: auto auto;
+  grid-template-columns: 50% 50%;
   gap: 10px;
 }
     </style>
@@ -112,7 +112,7 @@
                             <div class="col-2">
                                 <div class="input-group">
                                     <div class="rs-select2 js-select-simple select--no-search">
-                                        <input class="input--style-2" type="date" placeholder="Date:"
+                                        <input class="input--style-2" type="date" placeholder="Date:" style="padding: 9px 9px 5px 0px;"
                                             name="name">
                                     </div>
                                 </div>
@@ -124,22 +124,31 @@
                         <br>
                         <!-- BoD / Gender -->
                         <div class="row row-space">
-                            <div class="col-2">
-                                <div class="input-group">
-                                    <div class="rs-select2 js-select-simple select--no-search">
-                                    <select name="gender">
-                                        <option disabled="disabled" selected="selected">Gender</option>
-                                        <option>Male</option>
-                                        <option>Female</option>
-                                        <option>Other</option>
-                                    </select>
-                                </div>
-                                </div>
+                            <div >
+                                <select name="gender" style="width: 100%;
+                                padding: 9px 0;
+                                border: none;
+                                border-bottom: 1px solid #e5e5e5;
+                                font-size: 14px;
+                                color: #666;
+                                font-size: 16px;
+    font-weight: 500;
+                                
+                                ">
+                                    <option disabled="disabled" selected="selected">Gender</option>
+                                    <option>Male</option>
+                                    <option>Female</option>
+                                    <option>Other</option>
+                                </select>
+                            
+                                <!-- <div class="input-group">
+                                    <input class="input--style-2" type="number" placeholder="Height in cm or inches" name="name">
+                                </div> -->
                             </div>
                             <div class="col-2">
                                 <div class="input-group">
                                     <div class="rs-select2 js-select-simple select--no-search">
-                                        <input class="input--style-2" type="number" placeholder="Age(Years)"
+                                        <input class="input--style-2" type="number" placeholder="Age in years"
                                             name="name">
 
                                         <div class="select-dropdown"></div>
@@ -165,6 +174,9 @@
                                 </div>
                             </div>
                         </div>
+
+
+                       
 
 <br>
                         <h3 style="text-align: center;" >    Geographical Details</h3>
